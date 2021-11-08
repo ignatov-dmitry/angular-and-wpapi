@@ -1,0 +1,32 @@
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+import { PagesRoutingModule } from './pages-routing.module';
+import { LayoutComponent } from './layout.component';
+import { ListComponent } from './list.component';
+import {AddEditPageComponent} from './add-edit.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule } from '@angular/material/input';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    PagesRoutingModule,
+    MatTableModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    AngularEditorModule
+  ],
+  declarations: [
+    LayoutComponent,
+    ListComponent,
+    AddEditPageComponent
+  ]
+})
+export class PagesModule { }
